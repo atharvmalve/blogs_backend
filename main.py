@@ -43,7 +43,10 @@ app = FastAPI(
 # Configure CORS
 origins = [
     "http://localhost:3000",
-    "https://atharvmalve.vercel.app"
+    "https://atharvmalve.vercel.app",
+    "http://10.2.0.2:3000",
+    " http://192.168.56.1:3000",
+    "*"
 ]
 
 app.add_middleware(
